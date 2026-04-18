@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output (ChromaDB vectors)
+chroma_db/
+
+# Environment configurations & Secrets (Ensures keys don't get committed)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

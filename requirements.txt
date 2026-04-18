@@ -1,0 +1,11 @@
+streamlit
+chromadb
+langchain
+langchain-openai
+langchain-google-genai
+python-dotenv
+pandas
+pypdf
+langchain-experimental
+sentence-transformers
+langchain-huggingface
