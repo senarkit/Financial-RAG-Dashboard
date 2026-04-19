@@ -30,9 +30,11 @@ An enterprise-grade Retrieve-and-Generate (RAG) system built to analyze and extr
    ```
 
 2. **Install Dependencies:**
-   Ensure you are running Python 3.12, then install the required locked dependencies.
+   Ensure you are running Python 3.11, then install the required locked dependencies.
    *(Note: Certain packages like `transformers` and `numpy` are strictly bounded to prevent known macOS PyTorch definition crashes).*
    ```bash
+   py -3.11 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
