@@ -1,6 +1,6 @@
 # QNA generated through Agent Workflow
 
-## Question (a): How does the workflow add files to the RAG engine?
+## Refined Question (a): How are files added to the RAG engine for embedding and retrieval?
 ### Step-by-Step Explanation:
 1. **Uploading Files via Streamlit Dashboard**:
    - The Streamlit dashboard in `app.py` provides a user interface for uploading files.
@@ -35,7 +35,7 @@
 
 ---
 
-## Question (b): Where are the embeddings stored?
+## Refined Question (b): Where and how are the embeddings stored on disk?
 ### Step-by-Step Explanation:
 1. **Persistence Directory**:
    - The `RAGEngine` class defines a `persist_directory` parameter for Chroma, set to `./chroma_db`:
@@ -67,8 +67,7 @@
 
 ---
 
-## Question (c): What is meant by Hybrid? Explain the embeddings and search used. Does it include keyword-based (BM25) and semantic search?
-
+## Refined Question (c): What is hybrid search, and how does it combine BM25 and semantic search?
 ### Explanation:
 1. **Hybrid Search**:
    - Hybrid search combines **semantic search** (using embeddings) and **keyword-based search** (like BM25) to retrieve the most relevant documents.
@@ -101,8 +100,7 @@
 
 ---
 
-## Question (d): Once a file is uploaded and embeddings are stored in the `chroma_db` folder on disk, how can the same on-disk information be reused for answering questions without redoing embedding?
-
+## Refined Question (d): How can stored embeddings in the `chroma_db` folder be reused without re-embedding?
 ### Explanation:
 1. **Persistence of Embeddings**:
    - The `RAGEngine` uses the `Chroma` vector store with a `persist_directory` set to `./chroma_db`.
@@ -141,8 +139,7 @@
 
 ---
 
-## Question (e): Provide a flow diagram on the order of files and functions that get executed from the time the Python Streamlit command is run and the app opens.
-
+## Refined Question (e): What is the sequence of file and function executions from running the Streamlit command?
 ### Explanation:
 Below is a flow diagram that outlines the sequence of file executions and functions invoked:
 
